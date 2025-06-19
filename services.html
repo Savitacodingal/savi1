@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item "><a href="home.html">Home</a></li>
+            <li class="nav-item "><a href="aboutus.html">About Us</a></li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contactus.html">Contact Us</a></li>
+            <li class="nav-item active"><a href="services.html">Services</a></li>
+        </ul>
+    </nav>
+    <label for="subject">Our Services:</label>
+    
+    <select id="subject" onchange="getSelectedSubject()">
+    
+        <option value="Financial Services">Financial Services</option>
+    
+        <option value="Data Services">Data Services</option>
+    
+        <option value="Cloud Services">Clous Services</option>
+    
+        <option value="Mobile Solutions">Mobile Solutions</option>
+    
+    
+    </select>
+    <p id="result"></p>
+    
+    <script>
+
+        function getSelectedSubject() {
+
+            const selectElement = document.getElementById("subject");
+
+            const selectedValue = selectElement.value;
+
+            document.getElementById("result").textContent =
+
+                "You selected: " + selectedValue;
+                if(selectedValue=="Financial Services"){
+                    
+                }
+
+        }
+
+    </script>
+    <div class="footer">
+        <p>@copy all rights and reserved by Abubakar shahid</p>
+    </div>
+</body>
+
+</html>
